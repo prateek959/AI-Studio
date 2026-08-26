@@ -13,7 +13,7 @@ export async function generateIdea(topic) {
     const completion = await openrouter.chat.send({
       chatGenerationParams: {
         // model: "openai/gpt-oss-120b:free",
-        model: "openai/gpt-oss-20b:free",
+        model: "nvidia/nemotron-3.5-lightning:free",
         messages: [
           {
             role: "user",
