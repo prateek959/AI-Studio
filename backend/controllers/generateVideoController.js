@@ -9,6 +9,8 @@ export const videoGenerater = async (req, res, next) => {
     try {
         const filename = await createFinalVideo(req.content.audio, req.user.id);
         const url = `${req.protocol}://${req.get("host")}/storage/output/${req.user.id}/${filename}`
+        console.log(`${req.protocol}`)
+        console.log(url);
         await Video.create({
             userID: req.user.id,
             title: req.content.title,
