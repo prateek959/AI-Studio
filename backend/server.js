@@ -19,7 +19,7 @@ app.use(cors({
   "https://ai-studio-three-blue.vercel.app",
 ],
   credentials:true,
-   allowedHeaders: ["Content-Type", "Authorization"]
+  //  allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 const __filename = fileURLToPath(import.meta.url);
