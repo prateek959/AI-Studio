@@ -11,7 +11,7 @@ export async function generateTitle(script) {
   try {
 
     const response = await client.chat.complete({
-      model: "mistral-medium-latest",
+      model: "codestral-2508",
       messages: [
         {
           role: "user",
